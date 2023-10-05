@@ -1,0 +1,42 @@
+
+
+:root{
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(9, 12%, 22%);
+    --Cream: hsl(0, 0%, 84%);
+    --Very-pale-orange: hsl(31, 100%, 90%);
+
+    --padding-inline: 10px;
+}
+
+
+@media screen and (max-width:401px){
+    .main{
+        width: 90%;
+        padding-block: 10px;
+    }
+
+    .bar-container{
+        padding: var(--padding-inline);
+    }
+
+    .bar-graph-container{
+        padding: var(--padding-inline);
+        padding-top: 40px;
+    }
+
+    .footer{
+        padding: var(--padding-inline);
+    }
+    
+    .bar-item{
+        width: 40px;
+    }
+
+    .bar{
+        width: 40px;
+    }
+}

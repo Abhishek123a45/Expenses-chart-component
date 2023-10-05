@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(9, 12%, 22%);
+    --Cream: hsl(0, 0%, 84%);
+    --Very-pale-orange: hsl(31, 100%, 90%);
+
+    --padding-inline: 20px;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--Very-pale-orange);
+}
+
+
+p{
+    font-size: 18px;
+}
+
+.cream-white{
+    color: var(--Cream);
+}
+
+.medium-brown{
+    color: var(--Medium-brown);
+}
+
+.main{
+    width: 40%;
+}
+
+.balance-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-inline);
+    color: white;
+    background-color: var(--Soft-red);
+    border-radius: 15px;
+}
+
+.my-balance p{
+    color: var(--Very-pale-orange);
+}
+
+.bar-container{
+    margin-top: 20px;
+    padding: var(--padding-inline);
+    background-color: white;
+    border-radius: 15px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.percentage-increase p{
+    text-align: right;
+}
+
+.chart-container{
+    padding-bottom: 10px;
+}
+
+.bar-graph-container{
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 30px;
+    display: grid;
+    align-items: end;
+    grid-template-columns: repeat(7,1fr);
+}
+
+/* bar-item */
+
+.bar-item{
+    width: 50px;
+}
+
+.bar{
+    position: relative;
+    width: 50px;
+    height: 200px;
+    background-color: var(--Soft-red);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* .bar.element::before{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: -2px;
+    background-color: var(--Medium-brown);
+    width: 55px;
+    height: 30px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.4s ease-in;
+} */
+
+.bar:hover::before{
+    opacity: 1;
+}
+
+.bar:hover{
+    background-color: hsla(10, 79%, 65%, 0.827);
+}
+
+
+.bar-item p{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.cyan{
+    background-color: var(--Cyan);
+}
+
+.cyan:hover{
+    background-color: hsla(186, 34%, 60%, 0.686);
+}
+
